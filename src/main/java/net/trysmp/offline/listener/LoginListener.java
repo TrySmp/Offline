@@ -8,6 +8,8 @@ public class LoginListener {
 
     @Subscribe
     public void handle(LoginEvent event) {
+        if (event.getPlayer().hasPermission("*")) return;
+
         event.setResult(LoginEvent.ComponentResult.denied(ColorUtil.translateColorCodes("""
                 &#ff0000The biggest TrySmp update is on the way!
                 
