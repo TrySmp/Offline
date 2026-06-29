@@ -1,5 +1,6 @@
 package net.trysmp.offline;
 
+import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
 import com.velocitypowered.api.plugin.Plugin;
@@ -7,8 +8,6 @@ import com.velocitypowered.api.proxy.ProxyServer;
 import lombok.Getter;
 import net.trysmp.offline.listener.LoginListener;
 import net.trysmp.offline.listener.ProxyPingListener;
-
-import javax.inject.Inject;
 
 @Plugin(
         id = "offline",

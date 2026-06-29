@@ -1,5 +1,11 @@
 .idea/
-.mvn/
 target/
+.gradle/
+
 build/
+run/
+out/
+
 *.iml
+
+gradle.properties
